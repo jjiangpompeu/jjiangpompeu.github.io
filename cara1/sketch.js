@@ -1,66 +1,28 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);//l'area de dibuix de 600 px del 600 de cada costat.
 }
 
 function draw() {
-  background(220);
+  background(171, 210, 255);//fons de la pantalla o dibuix, gris si te un número entre 0 i 255, zero es negra i 255 es blanc. Qualsevol número entre 0 i 255 serà gris. Si tenim 3 numeros el primer número és vermellor o R (red), el segon número és la verdor o G (green) i el tercer número és la blavor o B (bleu). Els colors RGB permeten construir setze mil·lions de colors diferents (255x255x255).
+  fill(250, 220, 192);
+  ellipse(300,300,200,250);//El primer número entre parèntesis és la posició x del centre,el segon número és la posició i alçada del centre de l'el·lipse,el tercer número és l'amplada i el queart número és l'alçada de l'el·lipse.
+    fill(148, 72, 55);//Color ull dret esquerre.Funciona com el background amb rgb.
+ellipse(250,250,50,30);//ull esquerre.
+      fill(148, 72, 55);//color ull dret.
+  ellipse(340,270,60,30);//ull dret.
+      fill(255, 130, 151);//Funciona com l'el·lipse els priemrs quatre números i els dos últims són 0 PI o PI,0.
+  fill(0)
+  triangle(300,290,280,330,320,330);//Nas.
   
-  fill(255,224,189);
-  stroke(0);
-  strokeWeight(1,5);
-  ellipse(200,210,260,260);
-
-  noStroke();
-  fill(255,150,150,150);
-  ellipse(100,210,50,30);
-  ellipse(300,210,50,30);
-
+  noFill();//No pintis el color de la cella.
+  
+  arc(350,235,60,20,PI,0);//Cella dreta.
+  line(220,230,265,220);
   stroke(0);
   strokeWeight(4);
-  line(115,130,165,140);
-  line(285,130,235,140);
-
-  strokeWeight(1,5);
-  fill(255);
-  ellipse(140,170,60,60);
-  ellipse(260,170,60,60)
-
-  fill(0);
-  noStroke();
-  ellipse(140,170,25,25);
-  ellipse(260,170,25,25);
-
-  fill(255);
-  ellipse(145,165,8,8);
-  ellipse(265,165,8,8);
-
-  stroke(0);
-  strokeWeight(1.5);
-  fill(255,200,150);
-  ellipse(200,215,35,45);
-  fill(0);
-  noStroke();
-  ellipse(192,225,7,9);
-  ellipse(208,225,7,9);
-
-  stroke(0);
-  strokeWeight(1,5);
-  fill(60,20,20);
-  arc(200,270,90,80,0,PI);
-
-  noStroke();
-  fill(255,100,150);
-  arc(200,275,50,40,0,PI);
-
-  stroke(0);
-  strokeWeight(1,5);
-  fill(100,150,225);
-  rect(90,70,220,40,10);
-  fill(255,100,100);
-  triangle(200,20,110,70,290,70);
-  fill(255,255,0);
-  ellipse(200,20,20,20);
   
   
   
+  
+ 
 }
