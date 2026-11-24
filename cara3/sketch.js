@@ -1,0 +1,67 @@
+//Farem moviments repetitius gràcias al sinus i cosinus que produiran vanvis de color repetituis o moviments repetitius de la boca, els ulls tota la cara, les pipul·les, etc.
+//primer crearem unes variables: canvi petit que canviarà de -8a a +8,canvimitja que canviarà de -15a+15,canvigran que canviarà -50a +50 canvimoltgran que canviarà -127a+127 
+function setup() {
+  createCanvas(600, 600);//l'area de dibuix de 600 px del 600 de cada costat.
+}
+
+function draw() {
+    
+let canvipetit=sin(frameCount*0.05)*8;
+let canvimitja=sin(frameCount*0.05)*15;
+let canvigran=sin(frameCount*0.05)*50;
+let canvimoltgran=sin(frameCount*0.05)*127;
+print(canvipetit);
+
+  background(171, 210, 255 );//fons de la pantalla o dibuix, gris si te un número entre 0 i 255, zero es negra i 255 es blanc. Qualsevol número entre 0 i 255 serà gris. Si tenim 3 numeros el primer número és vermellor o R (red), el segon número és la verdor o G (green) i el tercer número és la blavor o B (bleu). Els colors RGB permeten construir setze mil·lions de colors diferents (255x255x255)
+ 
+fill(225,257,28);//Color marró del cabell
+ellipse(300,220,230,120);//Dibuixa una el·lipse per formar el cabell
+ellipse(300,150,75,75);// Dibuixa una altra el·lipse per formar el cabell
+  fill(250, 220, 192);//Color de la cara
+  ellipse(300,300,250,241,250);//El primer número entre parèntesis és la posició x del centre,el segon número és la posició i alçada del centre de l'el·lipse,el tercer número és l'amplada i el queart número és l'alçada de l'el·lipse
+  fill(-57,-83,0);//Color ull dret esquerre.Funciona com el background amb rgb
+    ellipse(340,250,60,60 + canvimitja);//ull esquerre
+  fill(148, 72, 55);//color ull esquerre
+  ellipse(250,250,90,90 +canvimitja);//ull dret
+    fill(148, 72, 55);//color ull dret
+  fill(115,41,41);//color marró fos del nas
+  arc(300,350 +canvigran,100,70,0,PI);//Funciona com l'el·lipse els priemrs quatre números i els dos últims són 0 PI o PI,0.Boca
+      strokeWeight(4);
+triangle(280,300,320,300,300,335);//El nas
+  fill(70, 40, 25); // Color marró fosc de les pupil·les
+  ellipse(255,255,30,40 + canvipetit);//Pupil·la de l'ull dret
+  ellipse(345,255,30,40 + canvipetit);//Pupil·la de l'ull esquerre
+  fill(255,255,255);//Color blanc per donar brillantor als ulls
+  ellipse(260,245,10,10);//Brillantor de l'ull dret
+  ellipse(350,245,10,10);//Brillantor de l'ull esquerre
+    line(220 + canvimitja,225,265,215,0,PI);//Cella esquerre
+  line(325 + canvipetit,215,360,220,0,PI);//Cella dreta
+  fill(245, 150, 150, 120);//Color rosa clar per a les galtes
+  ellipse(255,325,40,22);//Galta dreta
+  ellipse(375,325,40,22);//Galta esquerre
+  
+  
+
+  
+
+
+ 
+
+  
+'}'
+
+  
+  
+
+  
+
+ 
+
+
+ 
+  
+
+  
+  
+ 
+}
